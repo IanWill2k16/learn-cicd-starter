@@ -19,6 +19,9 @@ jobs:
         with:
           go-version: "1.23.0"
 
+      - name: Build program
+        run: ./buildprod.sh
+
       - id: 'auth'
         uses: 'google-github-actions/auth@v2'
         with:
