@@ -20,7 +20,7 @@ jobs:
           go-version: "1.23.0"
 
       - name: Build program
-        run: ./buildprod.sh
+        run: ./scripts/buildprod.sh
 
       - id: 'auth'
         uses: 'google-github-actions/auth@v2'
